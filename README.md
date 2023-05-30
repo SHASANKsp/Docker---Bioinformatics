@@ -42,7 +42,7 @@ docker run -p PORT_ON_SYSTEM:PORT_ON_CONTAINER <image_name>:<tag>
 You can create and run containers based on it using the docker run command.
 
 
-  ################################################### Dockerfile\n
+  ################################################### Dockerfile  \n
 FROM ubuntu:20.04
 WORKDIR /app
 COPY software /app
