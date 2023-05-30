@@ -50,9 +50,9 @@ You can create and run containers based on it using the docker run command.
    EXPOSE 3500  
    CMD ["<startup_command>"]  
 
-##################################################### Shell
-docker build -t random:0.0.1 .
-docker run -p 3500:3500 random:0.0.1
+##################################################### Shell  
+   docker build -t random:0.0.1 .
+   docker run -p 3500:3500 random:0.0.1
 
 
 
