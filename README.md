@@ -5,7 +5,7 @@ Building docker images for bioinformatics tools and further initializing the doc
 
 
 ##### Basic workflow to make a docker image for any software working in linux:
-A. Linux base image: 
+1. Linux base image: 
    FROM ubuntu:20.04
 Select a Linux distribution, you can use an official Ubuntu, Debian, or Alpine Linux image. 
 This depends on the requirements of the software.
@@ -42,7 +42,7 @@ docker run -p PORT_ON_SYSTEM:PORT_ON_CONTAINER <image_name>:<tag>
 You can create and run containers based on it using the docker run command.
 
 
-  ################################################### Dockerfile
+  ################################################### Dockerfile\n
 FROM ubuntu:20.04
 WORKDIR /app
 COPY software /app
