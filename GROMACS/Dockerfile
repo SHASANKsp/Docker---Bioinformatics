@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     libgomp1
 
 
-#Download and install Bedtools
+#Download and install gromacs
 RUN wget ftp://ftp.gromacs.org/pub/gromacs/gromacs-2021.2.tar.gz && \
     tar -zxvf gromacs-2021.2.tar.gz && \
     rm gromacs-2021.2.tar.gz && \
@@ -42,6 +42,4 @@ RUN wget ftp://ftp.gromacs.org/pub/gromacs/gromacs-2021.2.tar.gz && \
 
 
 #Set the PATH environment variable
-ENV LD_LIBRARY_PATH="/usr/local/gromacs/lib"
-
-CMD ["bash"]
+ENV LD_LIBRARY_PATH="/app/gromacs-2021.2/bin:${PATH}"
